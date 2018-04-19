@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300');
+
+main, header{
+    margin:0 auto;
+    width:900px;
+    text-align: center;
+}
+
+main{
+    margin-top: 104px;
+    color: #626262;
+    }
+img{
+width: 421px;
+height: 281px;
+}
+
+article{
+    width: 420px;
+    display: inline-block;
+    text-align: left;
+    }
+
+.secondblock{
+    margin-left: 56px;
+}
+
+.main-navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color:#626262;
+    }
+
+    .main-navigation ul li a{
+    color:#626262;
+    text-decoration: none;
+    }
+
+    .category{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:  300;
+    font-size: 14;
+    text-transform: uppercase;
+    color: #dedbd4;
+    margin-top: 32px;
+    }
+
+    h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 32px;
+    }
+
+    article p{
+    font-family:'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+    }
+
+    button{
+    font-family:'Playfair Display', serif;
+    font-size: 20px;
+    color: #626262;
+    margin-top: 58px;
+    }
