@@ -1,3 +1,8 @@
+* {
+    margin: 0; 
+    padding: 0
+}
+
 @impor url{
     https://fonts.google.com/?selection.family=Open+Sans:300,700|Roboto:300,900&query=roboto;
 }
@@ -87,18 +92,20 @@ width: 1111px:
 
 .item{
 float: left;
-margin: 20px 10px;
+margin: 0 0 10px;
 display: inline-block;
 width: 255px;
-height: 323px;
-/*clear: both;*/
+}
+
+.item:not(:nth-of-type(4n+4)){
+margin-right: 30px;
 }
 
 .image{
-display: inline-block;
+display: block;
 width: 255px;
 height: 283px;
-margin: 0 -4px -4px 0;
+object-fit: cover;
 }
 
 .item:hover .name{
@@ -108,41 +115,29 @@ background: #1abc9c;
 background: #1abc9c;
 }
 
-/*.image{
-display: inline-block;
-padding: 255px 280px;
-width: 254px;
-height: 281px;
-} */
-
 .name,
 .price{
     display: inline-block;
-    /*padding: 42px 200px;*/
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: #ffffff;
+    line-height: 40px;
     }
 
 .name{
     background-color: #323232;
     width: 201px;
     height: 40px;
-    /*padding: 42px 200px;*/
+    float: left;
 }
 .price{
     background-color: #8c8c8c;
-    /*padding: 42px 50px;*/
     width: 50px;
     height: 40px;
-    margin: 0 -4px;
-}
-
-/*.pricelist li{
-  padding: 253px 322px;
-}*/
+    float: right;
+    }
 
 .article:after{
     display: block;
@@ -159,10 +154,15 @@ height: 281px;
 
 .news{
     float: left;
-    width: 320px;
+    width: 347px;
+    display: block;
     height: 496px;
-    text-align: left;
-    margin: 0 32px 10px 0;
+    text-align: left;   
+    margin: 0 0 10px;
+}
+
+.news:not(:nth-of-type(3n+3)){
+    margin-right:30px;
 }
 
 .picture{
@@ -175,7 +175,6 @@ height: 281px;
     font-family: 'Open Sans', bold, sans-serif;
     font-size: 18px;
     color: #747272;
-    width: 350px;
     line-height: 1.5;
     }
 
@@ -184,7 +183,6 @@ height: 281px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #747272;
-    width: 350px;
     line-height: 1.5;
     }
 
@@ -195,9 +193,14 @@ height: 281px;
     height: 4px;
     content: " ";
     margin: 100 auto;
-    
     }
 
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    
 button{
 background: #1abc9c;
 font-family: 'Open Sans', sans-serif;
@@ -206,6 +209,4 @@ font-size: 16px;
 color: #ffffff;
 width: 158px;
 height: 51px;
-
-/*padding: 51px 160px;*/
 }
