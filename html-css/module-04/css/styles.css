@@ -22,7 +22,7 @@ ul{
     color: #0f0101;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 30;
+    font-size: 30px;
     line-height: 30px;
     padding: 10px 110px 10px 10px;
     vertical-align: middle;
@@ -32,7 +32,7 @@ ul{
 .logo:first-letter{
     text-transform: uppercase;
     color: #1abc9c;
-    font-weight: bold, 900;
+    font-weight: 900;
     }
 
 .navigation{
