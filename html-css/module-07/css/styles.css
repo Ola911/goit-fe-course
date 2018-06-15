@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'WisdomScriptAJ';
+    font-style: italic;
+    src: url('./WisdomScriptAJ.eot');
+    src: local('WisdomScriptAJ'), url('./WisdomScriptAJ.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v7-latin-regular.eot');
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v7-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'DroidSerifItalic';
+    src: url("../fonts/DroidSerifItalic/DroidSerifItalic.eot");
+    src: url("../fonts/DroidSerifItalic/DroidSerifItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DroidSerifItalic/DroidSerifItalic.woff") format("woff"),
+    url("../fonts/DroidSerifItalic/DroidSerifItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700|Open+Sans:400,400i');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 934px;
+    margin: 44px auto;
+    padding: 0px;
+}
+
+.logo {
+    font-family: 'WisdomScriptAJ';
+    font-size: 26px;
+    color: rgb(254, 209, 54);
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu-item {
+    list-style-type: none;
+    display: block;
+    height: 28px;
+    padding: 0px;
+    margin: 0px 0px 0px 40px;
+}
+
+.menu-href {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color:  rgb(34, 34, 34);
+    text-transform: uppercase;
+    line-height: 28Px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item:hover .menu-href {
+    color: rgb(254, 209, 54);
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.main-section {
+    width: 934px;
+    margin: 0px auto 120px auto;
+}
+
+.title {
+    font-family: 'Montserrat';
+    color:  rgb(34, 34, 34);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.after-title {
+    font-family: 'DroidSerifItalic', serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 75px;
+    color:  rgb(119, 119, 119);
+    font-size: 16px;
+}
+
+.wrapper-section-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 274px;
+    height: 187px;
+}
+
+.service-href {
+    display: flex;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(254, 209, 54);
+    width: 68px;
+    height: 68px;
+    margin: 0px auto 25px auto;
+}
+
+.service-icon {
+    margin: auto;
+}
+
+.service-title {
+    font-family: 'Montserrat';
+    color:  rgb(34, 34, 34);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    display: block;
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    color:  rgb(119, 119, 119);
+    height: 57px;
+    line-height: 19Px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer-info {
+    height: 676px;
+    padding-top: 110px;
+    position: relative;
+}
+
+.footer-section {
+    top: 0px;
+    background-color:  rgb(34, 34, 34);
+    width: 100%;
+    height: 676px;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-title {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.after-footer_title {
+    font-family: "DroidSerifItalic", serif;
+    color:  rgb(119, 119, 119);
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+}
+
+.wrapper-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 942px;
+    height: 213px;
+    margin: auto;
+}
+
+.input1 {
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    width: 455px;
+    height: 50px;
+    font-family: 'Montserrat';
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.input2 {
+    font-family: 'Montserrat';
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    resize: none;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: white;
+    width: 455px;
+    height: 210px;
+}
+
+.input1:focus:valid,
+.input2:focus:valid {
+    outline: 2px solid rgb(12, 211, 12);
+}
+
+.input1:focus:invalid,
+.input2:invalid {
+    outline: 2px solid red;
+}
+
+.input1:focus,
+.input2:focus {
+    outline: 2px solid rgb(236, 144, 38);
+}
+
+.input1::placeholder,
+.input2::placeholder {
+    color: rgb(187, 187, 187);;
+}
+
+.message-field {
+    font-family: 'Montserrat';
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    resize: none;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: white;
+    width: 455px;
+    height: 210px;
+}
+
+.footer-info button {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    margin: 30px auto auto auto;
+    }
