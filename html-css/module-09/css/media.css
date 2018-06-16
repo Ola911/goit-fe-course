@@ -1,0 +1,50 @@
+
+
+@media screen and (min-width: 768px) {
+    .main-page {
+        background: url(../img/Background_tablet.png), blue;
+        background-position: center;
+    }
+    .second-section {
+        width: 768px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .main-title {
+        font-size: 52px;
+        display: block;
+        width: 600px;
+        margin: auto;
+    }
+    .after-main-title {
+        width: 768px;
+        font-size: 24px;
+        margin: 35px auto;
+    }
+    .partners-list {
+        display: flex;
+    }
+
+.partners-list {
+    width: 768px;
+}
+
+.title-sec-section{
+    width: 768px;
+}
+.btn-other-partners{
+    margin: auto;
+    width: 193px;
+    height: 40pxp;
+    display: flex;
+}
+
+@media screen and (min-width: 960px) {
+    .main-page {
+        width: 960px;
+        background: url(../img/Background_desktop.png), blue;
+        background-position: center;
+    }
+}
