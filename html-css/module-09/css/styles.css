@@ -56,14 +56,6 @@
     padding: 0;
 }
 
-.main-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    width: 320px;
-}
-
 .main-page {
     background: url(../img/Background_mobile.png), blue;
     background-size: cover;
@@ -72,6 +64,11 @@
     height: 540px;
     /*margin: auto; 
     padding: 20px 10px;*/
+}
+
+.header {
+    padding-top: 40px;
+    min-height: 200px;
 }
 
 .autorisation {
